@@ -1,0 +1,24 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/opt/1C/v8.3/x86_64/1cv8 Enterprise /f%d
+MimeType=application/enterprise-1c-infobase
+NoDisplay=true
+Name=[1C] Start Enterprise
+Name[ru_RU]=[1C] Запустить Предприятие
+Icon=1cv8
+Actions=Designer;Test;
+
+[Desktop Action Designer]
+Exec=/opt/1C/v8.3/x86_64/1cv8 Designer /f%d
+Name=[1C] Start Designer
+Name[ru_RU]=[1C] Запустить Конфигуратор
+#Icon=fooview-new
+
+[Desktop Action Test]
+Exec=/opt/1C/v8.3/x86_64/1cv8 /f%d
+Name=[1C] Start Test
+Name[ru_RU]=[1C] Запустить Тест
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Terminal=false
+Exec=/opt/1C/v8.3/{Architecture}/1cv8 Enterprise /f%d
+MimeType=application/enterprise-1c-infobase
+NoDisplay=true
+Name=[1C] Start Enterprise
+Name[ru_RU]=[1C] Запустить Предприятие
+Icon=1cv8

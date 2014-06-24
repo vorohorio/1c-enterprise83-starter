@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd ../1c-enterprise83-starter
+md5deep -rel usr > DEBIAN/md5sums
+cd ..
+fakeroot dpkg-deb --build 1c-enterprise83-starter
+#awk '$1 ~ /^Version:/{print $2} $1 ~ /^Architecture:/{print $2}' 1c-enterprise83-starter/DEBIAN/control
+cd 1c-enterprise83-starter
+Version=`awk '/^Version:/{print $2}' DEBIAN/control`
+Architecture=`awk '/^Architecture:/{print $2}' DEBIAN/control`
+cd ..
+mv 1c-enterprise83-starter.deb deb/1c-enterprise83-starter_${Version}_${Architecture}.deb

@@ -1,0 +1,11 @@
+Package: 1c-enterprise83-starter
+Version: 1.0-1
+Maintainer: vorohorio <devel@teslenko.name>
+Architecture: all
+Section: devel
+Depends: 1c-enterprise83-client (>= 8.3.3)
+Priority: optional
+Installed-Size: 1
+Description: 1C:Enterprise 8.3 desktop starter
+ This package add to shell context menu for file 1Cv8.1CD items 
+ for start 1C:Enterprise 8.3 Designer and Enterprise

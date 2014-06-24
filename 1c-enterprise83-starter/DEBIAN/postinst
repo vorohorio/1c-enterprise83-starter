@@ -1,0 +1,20 @@
+#!/bin/bash
+
+ARCH=`dpkg --print-architecture`
+case $ARCH in
+    amd64)
+        ARCH="x86_64"
+        ;;
+    i386)
+        ARCH="i386"
+        ;;
+    *)
+        echo "WARNING: unsupported arch: $ARCH"
+        ARCH="$ARCH"
+        ;;
+esac
+
+sed -i -e "s/{Architecture}/$ARCH/g" /usr/share/applications/1cd-starter-designer.desktop  
+sed -i -e "s/{Architecture}/$ARCH/g" /usr/share/applications/1cd-starter-enterprise.desktop
+
+exit 0
