@@ -1,0 +1,11 @@
+1c-enterprise83-starter (2.0) unstable; urgency=medium
+
+  * Support current 1C:Enterprise layout (/opt/1cv8, 8.3.18+ and 8.5):
+    bases are started through /opt/1cv8/common/1cestart, which picks
+    the platform version itself.
+  * Detect infobases by file signature as well as by file name.
+  * Proper Debian source package built with debhelper.
+  * Drop hard dependency on versioned 1C client packages.
+  * Build and publish releases with GitHub Actions.
+
+ -- vorohorio <devel@teslenko.name>  Sat, 14 Nov 2026 12:00:00 +0300

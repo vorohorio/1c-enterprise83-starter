@@ -1,0 +1,3 @@
+data/applications/*.desktop usr/share/applications
+data/mime/1cd-starter.xml usr/share/mime/packages
+data/servicemenus/1cd-starter.desktop usr/share/kio/servicemenus

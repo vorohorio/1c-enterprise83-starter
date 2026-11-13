@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Service
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=application/x-1c-enterprise-infobase;
+Actions=enterprise;designer;
+X-KDE-Priority=TopLevel
+
+[Desktop Action enterprise]
+Name=[1C] Enterprise
+Name[ru]=[1C] Предприятие
+Icon=1cd-starter
+Exec=sh -c "exec /opt/1cv8/common/1cestart ENTERPRISE /F \\"\\$(dirname \\"\\$1\\")\\"" sh %f
+
+[Desktop Action designer]
+Name=[1C] Designer
+Name[ru]=[1C] Конфигуратор
+Icon=1cd-starter
+Exec=sh -c "exec /opt/1cv8/common/1cestart DESIGNER /F \\"\\$(dirname \\"\\$1\\")\\"" sh %f

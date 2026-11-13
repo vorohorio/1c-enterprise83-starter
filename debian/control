@@ -1,0 +1,18 @@
+Source: 1c-enterprise83-starter
+Section: misc
+Priority: optional
+Maintainer: vorohorio <devel@teslenko.name>
+Build-Depends: debhelper-compat (= 13)
+Standards-Version: 4.7.0
+Homepage: https://github.com/vorohorio/1c-enterprise83-starter
+Vcs-Git: https://github.com/vorohorio/1c-enterprise83-starter.git
+Vcs-Browser: https://github.com/vorohorio/1c-enterprise83-starter
+Rules-Requires-Root: no
+
+Package: 1c-enterprise83-starter
+Architecture: all
+Depends: ${misc:Depends}
+Description: context menu items to open 1C:Enterprise file infobases
+ Adds "Open with" items for 1Cv8.1CD files to the file manager context
+ menu (Dolphin, Nautilus, etc.) to start 1C:Enterprise 8.3 / 8.5 in
+ Designer and Enterprise modes via the 1cestart launcher.

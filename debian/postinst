@@ -1,0 +1,25 @@
+#!/bin/sh
+set -e
+
+# Иконки 1С версионные (1cestart-8.5.1-1529.png), поэтому держим
+# постоянное имя 1cd-starter как ссылку на иконку самой новой версии.
+# Обновляется при установке/удалении платформы по триггеру.
+update_icon() {
+    link=/usr/share/pixmaps/1cd-starter.png
+    icon=$(ls /usr/share/pixmaps/1cestart-[0-9]*.png 2>/dev/null | sort -V | tail -n 1)
+    if [ -n "$icon" ]; then
+        ln -sf "${icon##*/}" "$link"
+    else
+        rm -f "$link"
+    fi
+}
+
+case "$1" in
+    configure|triggered)
+        update_icon
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

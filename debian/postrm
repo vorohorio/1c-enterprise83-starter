@@ -1,0 +1,12 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+    remove|purge)
+        rm -f /usr/share/pixmaps/1cd-starter.png
+        ;;
+esac
+
+#DEBHELPER#
+
+exit 0

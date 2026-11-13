@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="application/x-1c-enterprise-infobase">
+        <comment>1C:Enterprise file infobase</comment>
+        <comment xml:lang="ru">Файловая информационная база 1С:Предприятия 8</comment>
+        <alias type="application/enterprise-1c-infobase"/>
+        <icon name="1cd-starter"/>
+        <magic priority="60">
+            <match type="string" offset="0" value="1CDBMSV8"/>
+        </magic>
+        <glob pattern="1Cv8.1CD" weight="80"/>
+    </mime-type>
+</mime-info>

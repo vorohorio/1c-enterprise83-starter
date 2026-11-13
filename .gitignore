@@ -1,0 +1,7 @@
+# Артефакты dpkg-buildpackage
+debian/.debhelper/
+debian/1c-enterprise83-starter/
+debian/debhelper-build-stamp
+debian/files
+debian/*.substvars
+*.deb

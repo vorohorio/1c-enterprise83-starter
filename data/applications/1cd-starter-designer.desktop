@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=[1C] Designer
+Name[ru]=[1C] Конфигуратор
+Comment=Open file infobase in 1C:Enterprise Designer mode
+Comment[ru]=Открыть файловую базу в режиме «Конфигуратор»
+Exec=sh -c "exec /opt/1cv8/common/1cestart DESIGNER /F \\"\\$(dirname \\"\\$1\\")\\"" sh %f
+TryExec=/opt/1cv8/common/1cestart
+Icon=1cd-starter
+Terminal=false
+NoDisplay=true
+MimeType=application/x-1c-enterprise-infobase;
